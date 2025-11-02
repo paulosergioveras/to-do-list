@@ -1,10 +1,11 @@
 from django.db import models
 
-PRIORITY_CHOICES =[
+PRIORITY_CHOICES = [
     ('low', 'Low'),
     ('medium', 'Medium'),
     ('high', 'High')
 ]
+
 
 class Todo(models.Model):
     title = models.CharField(max_length=200, verbose_name='Title')
