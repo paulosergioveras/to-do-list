@@ -9,7 +9,7 @@ class TodoSerializer(serializers.ModelSerializer):
         model = Todo
         fields = '__all__'
     
-    def validate(self, value):
+    def validate_due_date(self, value):
         if value and value < timezone.now():
             raise serializers.ValidationError(
                 'The due date cannot be earlier than the current date.'

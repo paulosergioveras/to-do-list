@@ -1,0 +1,14 @@
+.todo-list {
+  margin-top: 2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.empty-state p {
+  margin: 0;
+}

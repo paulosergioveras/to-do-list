@@ -9,7 +9,7 @@ class ModelAdmin(admin.ModelAdmin):
         'description',
         'completed',
         'priority',
-        'due_data',
+        'due_date',
         'created_at',
         'updated_at'
     )
