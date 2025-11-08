@@ -12,7 +12,7 @@ class Todo(models.Model):
     description = models.TextField(blank=True, null=True, verbose_name='Description')
     completed = models.BooleanField(default=False, verbose_name='Completed')
     priority = models.CharField(choices=PRIORITY_CHOICES, default='high', verbose_name='Priority')
-    due_data = models.DateTimeField(blank=True, null=True, verbose_name='Due Data')
+    due_date = models.DateTimeField(blank=True, null=True, verbose_name='Due Data')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created at')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Updated at')
 
